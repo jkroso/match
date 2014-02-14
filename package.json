@@ -1,0 +1,23 @@
+{
+  "name": "match",
+  "version": "0.1.0",
+  "description": "match a pattern against a value",
+  "keywords": ["match","equals"],
+  "dependencies": {
+    "type": "jkroso/type#1.0.2"
+  },
+  "devDependencies": {
+    "assert": "jkroso/assert",
+    "serve": "jkroso/serve",
+    "hydro-html": "*",
+    "hydro-bdd": "*",
+    "hydro-dot": "*",
+    "hydro": "*",
+    "jsmd": "*"
+  },
+  "repository": "git://github.com/jkroso/match.git",
+  "bugs": "https://github.com/jkroso/match/issues",
+  "author": "Jake Rosoman",
+  "files": ["index.js"],
+  "license": "MIT"
+}

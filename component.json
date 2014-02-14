@@ -1,0 +1,11 @@
+{
+	"name": "match",
+	"repo": "jkroso/match",
+	"description": "match a pattern against a value",
+	"keywords": ["match","equals"],
+	"dependencies": {
+    "jkroso/type": "1.0.2"
+  },
+	"scripts": ["index.js"],
+	"license": "MIT"
+}
