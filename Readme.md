@@ -9,7 +9,7 @@ With your favorite package manager:
 
 - [packin](//github.com/jkroso/packin): `packin add jkroso/match`
 - [component](//github.com/component/component#installing-packages): `component install jkroso/match`
-- [npm](//npmjs.org/doc/cli/npm-install.html): `npm install match`
+- [npm](//npmjs.org/doc/cli/npm-install.html): `npm install jkroso/match`
 
 then in your app:
 
