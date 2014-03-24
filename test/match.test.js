@@ -1,5 +1,5 @@
 
-var assert = require('assert')
+var assert = require('assert/index')
 var match = require('..')
 
 it('strings', function(){
@@ -22,6 +22,12 @@ it('regexp', function(){
 it('boolean', function(){
   assert(!match(true, false))
   assert(match(true, true))
+})
+
+it('functions', function(){
+  function add(){ return 1 + 1 }
+  assert(match(add, /\+/))
+  assert(match(add, function add(){ return 1 + 1 }))
 })
 
 describe('objects', function(){

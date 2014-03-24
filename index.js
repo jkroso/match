@@ -25,10 +25,14 @@ match.array = function(value, pattern){
   return true
 }
 
-match.boolean =
+match.number =
 match.string =
-match.number = function(value, pattern){
+match.boolean = function(value, pattern){
   return value == pattern
+}
+
+match.function = function(value, pattern){
+  return match(value, pattern.toString())
 }
 
 match.regexp = function(value, pattern){
