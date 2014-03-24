@@ -25,6 +25,7 @@ match.array = function(value, pattern){
   return true
 }
 
+match.boolean =
 match.string =
 match.number = function(value, pattern){
   return value == pattern

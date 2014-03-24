@@ -19,6 +19,11 @@ it('regexp', function(){
   assert(match('a', /a/))
 })
 
+it('boolean', function(){
+  assert(!match(true, false))
+  assert(match(true, true))
+})
+
 describe('objects', function(){
   it('should deeply match', function(){
     assert(!match({a:1,b:2}, {a:2}))
