@@ -4,7 +4,9 @@ var type = require('type')
 module.exports = match
 
 function match(value, pattern){
-  return match[type(pattern)](value, pattern)
+  var fn = match[type(pattern)]
+  if (!fn) throw new TypeError('can\'t match on '  + type(pattern))
+  return fn(value, pattern)
 }
 
 match.object = function(value, pattern){
